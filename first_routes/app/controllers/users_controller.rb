@@ -11,8 +11,4 @@ class UsersController < ApplicationController
         render json: params[:id]
     end
 
-    {"some_category"=>{"a_key"=>"another value", 
-    "a_second_key"=>"yet another value",
-     "inner_inner_hash"=>{"key"=>"value"}},
-      "something_else"=>"aaahhhhh"}
 end
