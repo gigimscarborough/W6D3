@@ -1,14 +1,17 @@
 class UsersController < ApplicationController
     def index
-        render plain: "I'm in the index action!"
+        render json:
     end
 
-    def create
-        render json: params
-    end
-
+    
     def show
         render json: params[:id]
+    end
+
+    private
+
+    def create
+        render json: params[:user]
     end
 
 end
